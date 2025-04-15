@@ -63,7 +63,7 @@
 
     <div class="container mt-4 text-center">
         <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#miModal">
-            Ver Ventana Emergente
+            Ver información adicional
         </button>
     </div>
 
@@ -88,7 +88,35 @@
     <h2>Tecnologías de Web APIs</h2>
     <img src="https://img.freepik.com/vector-gratis/ilustracion-concepto-api_114360-9822.jpg" alt="Imagen 4">
     <p>Una API (Interfaz de Programación de Aplicaciones) es un conjunto de reglas y protocolos que permite la comunicación entre diferentes sistemas o aplicaciones. Funciona como una capa intermedia que gestiona el intercambio de datos, facilitando la integración de servicios y funcionalidades entre plataformas. Gracias a las APIs, las empresas pueden compartir de forma segura sus datos y capacidades con desarrolladores externos, socios comerciales y otros departamentos internos, promoviendo la innovación, la eficiencia y la creación de nuevos servicios digitales.</p>
+<h3>HTTP</h3>
+<p>HTTP es el protocolo fundamental de la web. Es el encargado de definir cómo se comunican los navegadores (clientes) con los servidores web. Funciona mediante solicitudes y respuestas: el cliente hace una solicitud (por ejemplo, al ingresar una URL), y el servidor responde con el contenido correspondiente (como una página web).
 
+    Es un protocolo sin estado, lo que significa que no guarda información de sesiones anteriores por sí mismo. Por eso, muchas aplicaciones web utilizan cookies, sesiones o tokens para mantener la continuidad entre interacciones.</p>
+<h3>SOAP</h3>
+<p>SOAP es un protocolo de mensajería diseñado para intercambiar información estructurada en la implementación de servicios web. Utiliza principalmente XML para la codificación de los mensajes y se transporta generalmente sobre HTTP (aunque también puede usar otros protocolos como SMTP).
+
+    Se caracteriza por ser estricto, muy formal y altamente extensible. Incluye mecanismos para seguridad, transacciones y manejo de errores, lo cual lo hace ideal para entornos empresariales donde se necesita robustez y fiabilidad.
+    
+    A diferencia de REST, SOAP sigue un estándar rígido y requiere herramientas específicas para su implementación (como WSDL - Web Services Description Language).</p>
+<h3>REST</h3>
+<p>REST es un estilo de arquitectura para diseñar servicios web ligeros y escalables. A diferencia de SOAP, no es un protocolo, sino un conjunto de principios que guían cómo deben estructurarse las APIs para aprovechar las características del protocolo HTTP.
+
+    Los servicios RESTful operan mediante métodos HTTP estándar como GET, POST, PUT y DELETE. Los recursos (como usuarios, productos, etc.) se representan con URLs, y las respuestas suelen estar en formatos como JSON o XML (aunque JSON es el más común hoy en día por su ligereza).
+    
+    REST es popular por su simplicidad, flexibilidad y buen rendimiento, y se usa ampliamente en aplicaciones web y móviles modernas.</p>
+<h3>JWT</h3>
+<p>JWT es un estándar abierto (RFC 7519) que define un formato compacto y seguro para transmitir información entre partes como un objeto JSON. Es muy usado para autenticación y autorización en aplicaciones web y móviles.
+
+    Un JWT típicamente tiene tres partes codificadas en base64:
+    
+    Header (encabezado): indica el tipo de token y el algoritmo de firma (por ejemplo, HS256).
+    
+    Payload (carga útil): contiene los datos que se desean transmitir, como el ID del usuario o su rol.
+    
+    Signature (firma): garantiza la integridad del token y su autenticidad, evitando que se modifique sin ser detectado. JWT se suele enviar en el encabezado Authorization como:
+    Authorization: Bearer <token>
+    
+    Es ideal para sistemas distribuidos porque permite verificar la identidad del usuario sin consultar una base de datos en cada solicitud.</p>
 </div>
 
 <div id="Mic" class="container mt-4">
